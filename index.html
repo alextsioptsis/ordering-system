@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="'el">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>ΠΙΤΣΑΡΙΑ ΚΟΜΟ - ΠΑΡΑΓΓΕΛΙΑ</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="pizza-card">
+            <div class="header">
+                <h1>PITSA EXPRESS</h1>
+                <p>Φτιαξε την Δικη σου πιτσα</p>
+            </div>
+            <form action="SERVER.php" method="POST">
+                <div class="section">
+                    <h3>1. Επιλογη Ζυμης</h3>
+                    <label class="container">Ψιλη (+3)
+                        <input type="radio" name="zimi" value="fill" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                 <label class="container">Χοντρη (+1)
+                    <input type="radio" name="zimi" value="xontri">
+                    <span class="checkmark"></span>
+                 </label>
+                </div>
+
+                <div class="section">
+                    <h3>2. Διαλεξτε υλίκα (+1/υλίκο)</h3>
+                    <label class="container"> Τυρι
+                        <input type="checkbox" name="ylika[]" value="Tiri">
+                        <span class="checkbox-mark"></span>
+                    </label>
+                    <label class="container">Ζαμπον
+                       <input type="checkbox" name="ylika[]" value="Zampon">
+                       <span class="checkbox-mark"></span> 
+                    </label>
+                    <label class="container"> Μανηταρια 
+                        <input type="checkbox" name="ylika[]" value="Manitaria">
+                        <span class="checkbox-mark"></span>
+                    </label>
+                    <label class="container"> Πιπερια 
+                        <input type="checkbox" name="ylika[]" value="Piperia">
+                        <span class="checkbox-mark"></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn"> Ολοκλήρωση Παραγγελίας </button>
+            </form>
+        </div>
+    </body>
+</html>
